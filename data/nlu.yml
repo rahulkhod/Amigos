@@ -16,70 +16,49 @@ nlu:
     - goodevening
     - good afternoon
     - Hi
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
+- intent: bot_challenge_smalltalk
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - are you a robot?
+    - am I talking to an actual person?
+    - you're a bot aren't you?
+    - are you even a real person?
+- intent: hiring_process
+  examples: |
+    - What is hiring process?
+    - What is reqruitment process?
+    - hiring process
+    - reqruitment process
+- intent: apply_drive
+  examples: |
+    - is there any vacancies for freshers?
+    - do you hire freshers?
+    - vacancies for freshers
+- intent: eligibility_criteria
+  examples: |
+    - What is eligibility criteria?
+    - eligibility criteria
+    - criteria to apply
+    - eligible
+    - eligibility criteria for freshers
+- intent: package_lpa
+  examples: |
+    - What is the package for freshers?
+    - what is the package for experience candidate?
+    - package for experience candidate
+    - package for freshers
+- intent: training_candidate
+  examples: |
+    - what is training period of your company?
+    - training period
+    - training process
+   
+  
+
+    
+
+    
+

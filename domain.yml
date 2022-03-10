@@ -3,27 +3,36 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- mood_unhappy
 - greet
-- goodbye
-- affirm
-- deny
-- mood_great
-- bot_challenge
+- hiring_process
+- bot_challenge_smalltalk
+- apply_drive
+- eligibility_criteria
+- package_lpa
+- training_candidate
+
 responses:
   utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: Hello, How may I help you?
+  utter_process:
+  - text: For freshers, There will be four rounds such as Aptitude(Quants, LR, English, Technical and coding), technical interview, HR assessment and HR interview.
+  utter_bot_challenge:
+  - text: I am a bot, powered by Amigos.
+  utter_apply:
+  - text: We do have vacancies for freshers. would you like to apply?
+  utter_eligibility_criteria:
+  - text: eligibility_criteria for freshers -> BE/B.Tech (CS or IT/ECE/E&TC) Year of passing 2022, 60% throughout Academics in X/XII/UG.
+  utter_package_lpa:
+  - text: for freshers our comapany offers from 4.5 LPA to 12 LPA and experience candidate package depends on year of experience and domain.
+  utter_training_candidate:
+  - text: Generally we provide three months of training and It may vary according to technical track. After your joining our team will guide you for training.
+  
+
+
 actions:
-- utter_cheer_up
 - utter_greet
+- utter_process
+- utter_bot_challenge
+- utter_eligibility_criteria
+- utter_package_lpa
+- utter_training_candidate

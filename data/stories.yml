@@ -2,41 +2,23 @@ version: "3.0"
 
 stories:
 
-- story: happy path
+- story: hiring
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
+  - intent: hiring_process
+  - action: utter_process
+  - intent: bot_challenge_smalltalk
+  - action: utter_bot_challenge
+- story: freshers
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
+  - intent: apply_drive
+  - action: utter_apply 
+  - intent: eligibility_criteria
+  - action: utter_eligibility_criteria 
+  - intent: package_lpa
+  - action: utter_package_lpa
+- story: training
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - intent: training_candidate
+  - action: utter_training_candidate
